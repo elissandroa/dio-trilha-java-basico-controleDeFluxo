@@ -3,7 +3,7 @@ package controleFluxo;
 import java.util.Scanner;
 //Controle de fluxo com tratamento de exceções
 public class Contador {
-	public static void main(String[] args) throws ParametrosInvalidosException  {
+	public static void main(String[] args) {
 		Scanner terminal = new Scanner(System.in);
 		
 		int parametroUm = terminal.nextInt();
@@ -13,7 +13,7 @@ public class Contador {
 		terminal.close();
 	}
 	
-	static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
+	static void contar(int parametroUm, int parametroDois) {
 		if (parametroUm < parametroDois) {
 			int totalInteracoes = parametroDois - parametroUm;
 			for(int i = 1; i <= totalInteracoes; i++) {
